@@ -10,7 +10,8 @@ import SwiftUI
 struct CornerMenu: View {
     
     @Binding var activeTabIndex: Int
-    @State var open: Bool = true
+    @State var open: Bool = false
+    
     
     var btnVMs: [MenuButtonViewModel]
     
@@ -35,13 +36,15 @@ struct CornerMenu: View {
         }
     }
     
+    
     var menuUI: some View {
         ZStack {
             openCloseButton
+            //for each MenuButtonViewModel provided by parent class
             ForEach(btnVMs) { viewModel in
                 VStack {
-                    MenuButton(viewModel: viewModel, activeTabIndex: $activeTabIndex)
-                        .rotationEffect(Angle(degrees: getAngle(vm: viewModel)), anchor: .center)
+                    MenuButton(viewModel: viewModel, activeTabIndex: $activeTabIndex, open: $open)
+                        .rotationEffect(Angle(degrees: getAngle(vm: viewModel)), anchor: .center) //rotate button clockwise so it will be aligned vertically
                         .animation(.easeOut)
                     Spacer()
                 }.frame(width: iconWidth, height: open ? outerBoundaryClosed : outerBoundaryOpen)
@@ -52,6 +55,8 @@ struct CornerMenu: View {
         }
     }
     
+    
+    /// middle circle button with hamburger icon
     var openCloseButton: some View {
         Button(action: {
             open.toggle()
@@ -70,10 +75,11 @@ struct CornerMenu: View {
         })
     }
     
+    
     func getAngle(vm: MenuButtonViewModel) -> Double {
-        let a = (90.0 - (2 * angleInset)) / Double(btnVMs.count)
-        let b = 90.0 - angleInset - (Double(vm.btnIndex) * a)
-        return b
+        let angleStride = (90.0 - (2 * angleInset)) / Double(btnVMs.count)
+        let A = 90.0 - angleInset - (Double(vm.btnIndex) * angleStride)
+        return A
     }
     
 }

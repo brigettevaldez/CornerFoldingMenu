@@ -11,10 +11,14 @@ struct MenuButton: View {
     
     var viewModel: MenuButtonViewModel
     @Binding var activeTabIndex: Int
+    @Binding var open: Bool
     
     var body: some View {
         Button(action: {
-            activeTabIndex = viewModel.btnIndex
+            open = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                activeTabIndex = viewModel.btnIndex
+            }
         }, label: {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
@@ -32,6 +36,6 @@ struct MenuButton: View {
 
 struct MenuButton_Previews: PreviewProvider {
     static var previews: some View {
-        MenuButton(viewModel: MenuButtonViewModel(id: UUID(), btnIndex: 2, colorSet: MenuColorSet(), icon: Image(systemName: "touchid")), activeTabIndex: .constant(1))
+        MenuButton(viewModel: MenuButtonViewModel(id: UUID(), btnIndex: 2, colorSet: MenuColorSet(), icon: Image("three")), activeTabIndex: .constant(1), open: .constant(true))
     }
 }

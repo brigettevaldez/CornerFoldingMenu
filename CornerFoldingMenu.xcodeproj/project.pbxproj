@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48B1BA5C260A4E31003A573A /* PageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BA5B260A4E31003A573A /* PageOne.swift */; };
+		48B1BA61260A4E57003A573A /* PageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BA60260A4E57003A573A /* PageTwo.swift */; };
+		48B1BA69260A4E8D003A573A /* PageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BA68260A4E8D003A573A /* PageThree.swift */; };
+		48B1BA6E260A4EA2003A573A /* DefaultPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BA6D260A4EA2003A573A /* DefaultPage.swift */; };
+		48B1BA76260A4FF2003A573A /* PageZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1BA75260A4FF2003A573A /* PageZero.swift */; };
 		48C1AF1526091681003F48F1 /* CornerFoldingMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AF1426091681003F48F1 /* CornerFoldingMenuApp.swift */; };
 		48C1AF1726091681003F48F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AF1626091681003F48F1 /* ContentView.swift */; };
 		48C1AF1926091682003F48F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C1AF1826091682003F48F1 /* Assets.xcassets */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48B1BA5B260A4E31003A573A /* PageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PageOne.swift; path = CornerFoldingMenu/View/PageOne.swift; sourceTree = SOURCE_ROOT; };
+		48B1BA60260A4E57003A573A /* PageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwo.swift; sourceTree = "<group>"; };
+		48B1BA68260A4E8D003A573A /* PageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageThree.swift; sourceTree = "<group>"; };
+		48B1BA6D260A4EA2003A573A /* DefaultPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPage.swift; sourceTree = "<group>"; };
+		48B1BA75260A4FF2003A573A /* PageZero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageZero.swift; sourceTree = "<group>"; };
 		48C1AF1126091681003F48F1 /* CornerFoldingMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CornerFoldingMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1AF1426091681003F48F1 /* CornerFoldingMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerFoldingMenuApp.swift; sourceTree = "<group>"; };
 		48C1AF1626091681003F48F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,8 +162,13 @@
 			children = (
 				48C1AF1426091681003F48F1 /* CornerFoldingMenuApp.swift */,
 				48C1AF1626091681003F48F1 /* ContentView.swift */,
-				48C1AF5326091A01003F48F1 /* MenuButton.swift */,
 				48C1AF4E260919D0003F48F1 /* CornerMenu.swift */,
+				48C1AF5326091A01003F48F1 /* MenuButton.swift */,
+				48B1BA5B260A4E31003A573A /* PageOne.swift */,
+				48B1BA75260A4FF2003A573A /* PageZero.swift */,
+				48B1BA60260A4E57003A573A /* PageTwo.swift */,
+				48B1BA6D260A4EA2003A573A /* DefaultPage.swift */,
+				48B1BA68260A4E8D003A573A /* PageThree.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,10 +304,15 @@
 			files = (
 				48C1AF43260916E8003F48F1 /* ViewRouter.swift in Sources */,
 				48C1AF49260918CA003F48F1 /* MenuButtonViewModel.swift in Sources */,
+				48B1BA69260A4E8D003A573A /* PageThree.swift in Sources */,
 				48C1AF5426091A01003F48F1 /* MenuButton.swift in Sources */,
 				48C1AF1726091681003F48F1 /* ContentView.swift in Sources */,
+				48B1BA76260A4FF2003A573A /* PageZero.swift in Sources */,
 				48C1AF4F260919D0003F48F1 /* CornerMenu.swift in Sources */,
 				48C1AF1526091681003F48F1 /* CornerFoldingMenuApp.swift in Sources */,
+				48B1BA5C260A4E31003A573A /* PageOne.swift in Sources */,
+				48B1BA6E260A4EA2003A573A /* DefaultPage.swift in Sources */,
+				48B1BA61260A4E57003A573A /* PageTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
