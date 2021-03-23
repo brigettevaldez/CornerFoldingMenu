@@ -15,12 +15,13 @@ struct CornerMenu: View {
     var btnVMs: [MenuButtonViewModel]
     
     
-    var iconWidth: CGFloat = 55
-    var angleInset: Double = 2
-    var menuIconWidth: CGFloat = 30
-    var innerCircleWidth: CGFloat = 150
-    var outerBoundaryClosed: CGFloat = 400
-    var outerBoundaryOpen: CGFloat = 800
+    private let iconWidth: CGFloat = 55
+    private let angleInset: Double = 2
+    private let menuIconWidth: CGFloat = 30
+    private let innerCircleWidth: CGFloat = 150
+    private let outerBoundaryClosed: CGFloat = 400
+    private let outerBoundaryOpen: CGFloat = 800
+    
     
     init(activeTabIndex: Binding<Int>, btnViewModels: [MenuButtonViewModel]) {
         self._activeTabIndex = activeTabIndex
