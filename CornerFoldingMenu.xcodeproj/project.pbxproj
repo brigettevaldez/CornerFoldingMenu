@@ -13,6 +13,10 @@
 		48C1AF1C26091682003F48F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C1AF1B26091682003F48F1 /* Preview Assets.xcassets */; };
 		48C1AF2726091683003F48F1 /* CornerFoldingMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AF2626091683003F48F1 /* CornerFoldingMenuTests.swift */; };
 		48C1AF3226091683003F48F1 /* CornerFoldingMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AF3126091683003F48F1 /* CornerFoldingMenuUITests.swift */; };
+		48C1AF43260916E8003F48F1 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AF42260916E8003F48F1 /* ViewRouter.swift */; };
+		48C1AF49260918CA003F48F1 /* MenuButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AF48260918CA003F48F1 /* MenuButtonViewModel.swift */; };
+		48C1AF4F260919D0003F48F1 /* CornerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AF4E260919D0003F48F1 /* CornerMenu.swift */; };
+		48C1AF5426091A01003F48F1 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C1AF5326091A01003F48F1 /* MenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		48C1AF2D26091683003F48F1 /* CornerFoldingMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CornerFoldingMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1AF3126091683003F48F1 /* CornerFoldingMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerFoldingMenuUITests.swift; sourceTree = "<group>"; };
 		48C1AF3326091683003F48F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C1AF42260916E8003F48F1 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		48C1AF48260918CA003F48F1 /* MenuButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonViewModel.swift; sourceTree = "<group>"; };
+		48C1AF4E260919D0003F48F1 /* CornerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerMenu.swift; sourceTree = "<group>"; };
+		48C1AF5326091A01003F48F1 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,8 @@
 		48C1AF1326091681003F48F1 /* CornerFoldingMenu */ = {
 			isa = PBXGroup;
 			children = (
-				48C1AF1426091681003F48F1 /* CornerFoldingMenuApp.swift */,
-				48C1AF1626091681003F48F1 /* ContentView.swift */,
+				48C1AF4D260919BC003F48F1 /* View */,
+				48C1AF47260918B8003F48F1 /* ViewModel */,
 				48C1AF1826091682003F48F1 /* Assets.xcassets */,
 				48C1AF1D26091682003F48F1 /* Info.plist */,
 				48C1AF1A26091682003F48F1 /* Preview Content */,
@@ -128,6 +136,26 @@
 				48C1AF3326091683003F48F1 /* Info.plist */,
 			);
 			path = CornerFoldingMenuUITests;
+			sourceTree = "<group>";
+		};
+		48C1AF47260918B8003F48F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				48C1AF42260916E8003F48F1 /* ViewRouter.swift */,
+				48C1AF48260918CA003F48F1 /* MenuButtonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		48C1AF4D260919BC003F48F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48C1AF1426091681003F48F1 /* CornerFoldingMenuApp.swift */,
+				48C1AF1626091681003F48F1 /* ContentView.swift */,
+				48C1AF5326091A01003F48F1 /* MenuButton.swift */,
+				48C1AF4E260919D0003F48F1 /* CornerMenu.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C1AF43260916E8003F48F1 /* ViewRouter.swift in Sources */,
+				48C1AF49260918CA003F48F1 /* MenuButtonViewModel.swift in Sources */,
+				48C1AF5426091A01003F48F1 /* MenuButton.swift in Sources */,
 				48C1AF1726091681003F48F1 /* ContentView.swift in Sources */,
+				48C1AF4F260919D0003F48F1 /* CornerMenu.swift in Sources */,
 				48C1AF1526091681003F48F1 /* CornerFoldingMenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

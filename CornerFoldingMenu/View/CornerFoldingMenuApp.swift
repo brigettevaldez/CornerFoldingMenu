@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct CornerFoldingMenuApp: App {
+    
+    @ObservedObject var viewRouter: ViewRouter
+    
+    init() {
+        self.viewRouter = ViewRouter()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewRouter)
         }
     }
 }
